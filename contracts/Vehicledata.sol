@@ -9,7 +9,7 @@ struct VehicleDataEntry {
 
 mapping(address => VehicleDataEntry[]) public vehicleDataEntries;
 // mapping(bytes32 => address) public mappedVinToKeyEntries;
-address owner;
+address public owner;
 
 function Vehicledata() public {
     owner = msg.sender;
