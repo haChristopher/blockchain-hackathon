@@ -7,11 +7,11 @@ export enum KEY_CODE {
 }
 
 @Component({
-  selector: 'app-page-one',
-  templateUrl: './page-one.component.html',
-  styleUrls: ['./page-one.component.css']
+  selector: 'app-page-two',
+  templateUrl: './page-two.component.html',
+  styleUrls: ['./page-two.component.css']
 })
-export class PageOneComponent implements OnInit {
+export class PageTwoComponent implements OnInit {
   constructor(private router: Router) {}
 
   ngOnInit() {
@@ -22,11 +22,11 @@ export class PageOneComponent implements OnInit {
     console.log(event);
 
     if (event.keyCode === KEY_CODE.LEFT_ARROW) {
-      this.router.navigate(['start']);
+      this.router.navigate(['pageone']);
     }
 
     if (event.keyCode === KEY_CODE.RIGHT_ARROW) {
-      this.router.navigate(['pagetwo']);
+      this.router.navigate(['start']);
     }
   }
 
